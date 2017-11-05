@@ -77,9 +77,19 @@
 #pragma GCC diagnostic ignored "-Wmissing-declarations"
 #pragma GCC diagnostic ignored "-Wreturn-type"
 
+
+
+//
+void sys_init(void)
+{
+
+}
+
 int
 main(int argc, char* argv[])
 {
+
+
   // Send a greeting to the trace device (skipped on Release).
   trace_puts("Hello ARM World!");
 
@@ -90,7 +100,7 @@ main(int argc, char* argv[])
   timer_start();
 
   blink_led_init();
-  
+
   uint32_t seconds = 0;
 
   // Infinite loop
